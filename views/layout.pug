@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title #{title}: BlackBoard
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+      a.navbar-brand(href='/') BlackBoard
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item(class=(title==='Home'?'active':''))
+            a.nav-link(href='/')
+              | Home
+              span.sr-only (current)
+          li.nav-item(class=(title==='Courses'?'active':''))
+            a.nav-link(href='/courses') Courses
+          li.nav-item(class=(title===Apply?'active':''))
+            a.nav-link(href='/apply') Apply
+          li.nav-item.dropdown
+            a#dropdown01.nav-link.dropdown-toggle(href='https://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Learn
+            .dropdown-menu(aria-labelledby='dropdown01')
+              a.dropdown-item(href='#') Bridge Course
+              a.dropdown-item(href='#') Additional Skills
+              a.dropdown-item(href='#') Teaching others
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type='text', placeholder='Search', aria-label='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+
+
+
+    block content
+    footer
+      p &copy; BlackBoard 2018, All Rights Reserved
+
+    script(src='javascripts/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="javascript/jquery-3.3.1.slim.min.js"><\\/script>')
+    script(src='javascripts/popper.min.js')
+    script(src='javascripts/bootstrap.js')

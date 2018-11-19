@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  main(role='main')
+    section.jumbotron.text-center
+      .container
+        h1.jumbotron-heading BlackBoard Coures
+        p(style="color:white")
+          | Enroll for the courses you want. We have wide ranges of courses.
+        p
+          a.btn.btn-primary.my-2(href='#') Our Courses
+          a.btn.btn-secondary.my-2(href='#') My Courses
+    .album.py-5.bg-light
+      .container
+        .row
+          .col-md-4
+            .card.mb-4.shadow-sm
+              img.card-img-top(src="images/courses.jpg", alt='Card image cap')
+              .card-body
+                p.card-text
+                  | Prepare for the Bridge courses with us.Now you can enroll for courses for Bridge course after SEE and move toward advance career.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') View
+                    button.btn.btn-sm.btn-outline-secondary(type='button') Apply
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.shadow-sm
+              img.card-img-top(src="images/coding.png", alt='Card image cap')
+              .card-body
+                p.card-text
+                  | Start your coding journey with us. Take your first step with HTML.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') View
+                    button.btn.btn-sm.btn-outline-secondary(type='button') Apply
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.shadow-sm
+              img.card-img-top(src="images/skills.jpg", alt='Card image cap')
+              .card-body
+                p.card-text
+                  | Learn many skills such as soft skills and other thing which gives you joy. start learning anything you like. We'll provide wide range of courses for you to learn something new.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') View
+                    button.btn.btn-sm.btn-outline-secondary(type='button') Apply
+                  small.text-muted 9 mins

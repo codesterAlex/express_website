@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .container
+    <br>
+    form(method="post", action="apply/send")
+      .form-group
+        label(for='InputEmail1') Name
+        input#exampleInputName1.form-control(type='text', name="name" aria-describedby='emailHelp', placeholder='Enter yourname', required)
+        small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+
+      .form-group
+        label(for='InputEmail1') Email
+        input#exampleEmail1.form-control(type='email', name="email", placeholder='Your Email address', required)
+
+        .form-group
+          label(for='InputMessage1') Your Message
+          textarea#exampleMessage1.form-control(type='text', name="message", placeholder='Your Email address', required)
+
+      .form-check
+        input#eCheck1.form-check-input(type='checkbox')
+        label.form-check-label(for='exampleCheck1') Send Newletter to may mail
+        small#emailHelp.form-text.text-muted We'll never spam you.
+        <br>
+      button.btn.btn-primary(type='submit') Apply
