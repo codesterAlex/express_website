@@ -10,7 +10,8 @@ var apply = require('./routes/apply');
 var courses = require('./routes/courses');
 
 var app = express();
-
+//port
+var port = process.env.PORT || 8080;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -41,7 +42,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(3000,()=>{
-  console.log("listening to the port 3000");
+
+app.listen(port,()=>{
+  console.log(`listening to the port ${port}`);
 });
 module.exports = app;
